@@ -7,7 +7,7 @@ import actor.proto.send
 import actor.proto.spawn
 import actor.proto.toShortString
 
-fun main(args: Array<String>) {
+fun main() {
     val prop = fromFunc { msg ->
         when (msg) {
             is Started -> println("Started ${self.toShortString()}")

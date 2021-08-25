@@ -17,7 +17,7 @@ import java.lang.System.nanoTime
 import java.util.concurrent.CountDownLatch
 
 
-fun main(args: Array<String>) {
+fun main() {
     repeat(10) {
         run()
         readLine()

@@ -17,7 +17,7 @@ import java.time.Duration
 import java.util.concurrent.CountDownLatch
 
 
-fun main(args: Array<String>) {
+fun main() {
     registerFileDescriptor(Messages.getDescriptor())
     Remote.start("127.0.0.1", 0)
 
