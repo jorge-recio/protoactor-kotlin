@@ -64,6 +64,10 @@ configure(subprojects - project(':examples')) {
     apply from: "$rootDir/gradle/publishing.gradle"
     apply plugin: 'jacoco'
 
+    jacoco {
+        toolVersion = "0.8.7"
+    }
+    
     jacocoTestReport {
         reports {
             xml.enabled = true
