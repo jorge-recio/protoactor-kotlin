@@ -12,7 +12,7 @@ import actor.proto.stop
 import java.util.concurrent.CountDownLatch
 
 
-fun main(args: Array<String>) {
+fun main() {
     repeat(10) {
         runOnce()
     }

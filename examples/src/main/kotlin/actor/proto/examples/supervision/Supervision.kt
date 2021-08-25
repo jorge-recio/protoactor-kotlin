@@ -16,7 +16,7 @@ import actor.proto.spawn
 import actor.proto.stop
 import actor.proto.toShortString
 
-fun main(args: Array<String>) {
+fun main() {
     val decide = { pid: PID, reason: Exception ->
         println("Handling failure from ${pid.toShortString()} reason:$reason")
         when (reason) {

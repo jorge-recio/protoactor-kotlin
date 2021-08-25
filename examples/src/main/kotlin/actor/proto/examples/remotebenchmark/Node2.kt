@@ -15,7 +15,7 @@ import actor.proto.spawnNamed
 private val start: Start = Start.newBuilder().build()
 private val pong: Pong = Pong.newBuilder().build()
 
-fun main(args: Array<String>) {
+fun main() {
     registerFileDescriptor(getDescriptor())
     Remote.start("127.0.0.1", 12000)
 

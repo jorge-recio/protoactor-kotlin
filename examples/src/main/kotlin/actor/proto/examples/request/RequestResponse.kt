@@ -7,7 +7,7 @@ import kotlinx.coroutines.runBlocking
 
 import java.time.Duration
 
-fun main(args: Array<String>): Unit = runBlocking {
+fun main(): Unit = runBlocking {
     val prop = fromFunc {
         when (message) {
             is String -> {
